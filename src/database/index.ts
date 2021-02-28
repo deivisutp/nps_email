@@ -1,5 +1,6 @@
 import { Connection, ConnectionOptions, createConnection, getConnectionOptions } from 'typeorm';
 
+/*
 export const sqllite_config: ConnectionOptions = {
     type: "sqlite",
     database: process.env.NODE_ENV === 'test' ? "./src/database/database.test.sqlite" : "./src/database/database.sqlite",
@@ -15,11 +16,11 @@ createConnection(sqllite_config).then(res => {
 
 export default async (): Promise<Connection> => {
     return createConnection(sqllite_config);
-}
+} */
 
 //createConnection();
 
-/*
+
 export default async (): Promise<Connection> => {
     const defaultOptions = await getConnectionOptions();
 
@@ -31,4 +32,4 @@ export default async (): Promise<Connection> => {
                 : defaultOptions.database
         })
     );
-} */
+} 
